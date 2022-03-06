@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devic-width, Initial-scale=1.0">
+    <title> Crea tu pastel </title><br><br>
+    <link rel="stylesheet" href="">
+    <style></style>
+</head>
+<body>
+
+    <img src="./Pastelería.PNG" alt="Logo TACOSPACE" width="150px">
+    <h1> Creación de pedido en Bake Shop </h1>
+
+    <hr>
+
+    <p>
+        Regresar al Inicio
+    </p>
+    <a href="./Pastelería_inicio.html">
+        <Input type="button" value="Inicio" >
+    </a><br>
+
+    <hr>
+
+    <form action="Pedido.js">
+        <h3> Datos del cliente </h3>
+
+        <label for="Nombre"> Nombre Completo </label>
+        <input type="text" id="Nombre" placeholder="Ingresa tu nombre">
+        <br>
+        <label for="tel"> Teléfono </label>
+        <input type="tel" id="tel" name="tel" minlength="10" maxlength="10" placeholder="(XXX)-XXX-XX-XX">
+        <br>
+        <label for="url"> Correo Electrónico </label>
+        <input type="url" id="url" name="url" minlength="12" maxlength="50" placeholder="mail@Email.com">
+        <br><br>
+        
+        <h3> Características del pastel </h3>
+
+        <h4> Masa </h4>
+        <label for="pisos"> Pisos del pastel</label><br>
+        <input type="number" id="pisos" placeholder="1">
+        <br>
+        
+        <h4> Sabor del pan</h4>
+        <input type="radio" id="Chocolate" name="saborpan" value="Chocolate">
+        <label for="Chocolate"> Chocolate </label><br>
+        <input type="radio" id="Vainilla" name="saborpan" value="Vainilla">
+        <label for="Vainilla"> Vainilla </label><br>
+        <input type="radio" id="Fresa" name="saborpan" value="Fresa">
+        <label for="Fresa"> Fresa </label><br>
+        <input type="radio" id="red_velvet" name="saborpan" value="red_velvet">
+        <label for="red_velvet"> Red Velvet </label><br>
+        <input type="radio" id="Nuez" name="saborpan" value="Nuez">
+        <label for="Nuez"> Nuez </label><br>
+        <input type="radio" id="Plátano" name="saborpan" value="Platano">
+        <label for="Plátano"> Plátano </label>
+        
+        <h4> Relleno del Pastel</h4>  
+        <input type="checkbox" id="Mermelada" value="Mermelada">
+        <label for="Mermelada"> Mermelada </label>
+        <select name="Refresco" id="Refresco">
+            <option value=""> Fresa </option>
+            <option value=""> Mango </option>
+            <option value=""> Durazno </option>
+            <option value=""> Moras </option>
+            <option value=""> Frambuesa </option>
+        </select><br>
+
+        <input type="checkbox" id="rellenoCremoso" value="rellenoCremoso">
+        <label for="rellenoCremoso"> Relleno Cremoso </label>
+        <select name="rellenoCremoso" id="rellenoCremoso">
+            <option value=""> Chocolate </option>
+            <option value=""> Cajeta </option>
+            <option value=""> Crema Pastelera </option>
+            <option value=""> Nutella </option>
+            <option value=""> Lechera </option>
+            <option value=""> Dulce de Leche </option>
+            <option value=""> Miel de Maple </option>
+        </select><br>
+
+        <input type="checkbox" id="rellenofruta" value="rellenofruta">
+        <label for="rellenofruta"> Fruta </label>
+        <select name="rellenofruta" id="rellenofruta">
+            <option value=""> Fresa </option>
+            <option value=""> Mango </option>
+            <option value=""> Durazno </option>
+            <option value=""> Moras </option>
+            <option value=""> Frambuesa </option>
+            <option value=""> Platano </option>
+            <option value=""> Manzana </option>
+        </select>
+        <br>
+
+        <h4> Tipo de cubierta </h4>
+        <input type="radio" id="Fondant" name="tipocubierta" value="Fondant">
+        <label for="Fondant"> Fondant </label><br>
+        <input type="radio" id="Merengue" name="tipocubierta" value="Merengue">
+        <label for="Merengue"> Merengue </label><br>
+        <input type="radio" id="Icing" name="tipocubierta" value="Icing">
+        <label for="Icing"> Royal Icing </label><br>
+        <input type="radio" id="Ganache" name="tipocubierta" value="Ganache">
+        <label for="Ganache"> Ganache </label><br>
+        <input type="radio" id="Chantilly" name="tipocubierta" value="Chantilly">
+        <label for="Chantilly"> Chantilly </label><br>
+        <input type="radio" id="ButterCream" name="tipocubierta" value="ButterCream">
+        <label for="ButterCream"> Butter Cream </label>
+        <br>
+
+        <h4> Decoración </h4>
+
+        <input type="checkbox" id="Frase" value="Frase">
+        <label for="Frase"> Frase</label><br>
+        <label for="fresetexto"> Ingresa la frase: </label>
+        <input type="text" id="frasetexto" name="FraseTexto"><br><br>
+        <input type="checkbox" id="Frutal" name="Frutal" value="Frutal">
+        <label for="Frutal"> Frutal </label><br>
+        <input type="checkbox" id="Chocolates" name="Chocolates" value="Chocolates">
+        <label for="Chocolates"> Chocolates </label><br>
+        <input type="checkbox" id="Figurass" name="Figurass" value="Figurass">
+        <label for="Figurass"> Figuras sencillas </label>
+        <br>
+
+        <h4> Decoración Especial </h4>
+        <input type="radio" id="Personajes" name="decoraciónesp" value="Personajes">
+        <label for="Personajes"> Personajes </label><br>
+        <input type="radio" id="Temática" name="decoraciónesp" value="Temática">
+        <label for="Temática"> Temática Especial </label><br>
+        <input type="radio" id="otros" name="decoraciónesp" value="otros">
+        <label for="otros"> Otros </label><br>
+        <input type="file" id="archivo1" name="archivo1" multiple><br>
+        <br>
+
+        <label for="decripcion"> Descripción </label>
+        <input type="text" id="descripcion" name="descripción">
+        
+        <br><br>
+
+        <h3> Entrega del pedido </h3>
+
+        <h4> Fecha de entrega </h4>
+        <p> Indica la fecha y hora de cuando se requiera el pedido</p>
+        <input type="datetime-local" id="fecha2" name="fecha2">
+        <br>
+
+        <h4> Formato de Entrega </h4>
+        <input type="radio" id="Recoger" name="Entrega" value="Recoger">
+        <label for="Recoger"> Recoger en el Local </label><br>
+        <input type="radio" id="Envio" name="Entrega" value="Envio">
+        <label for="Envio"> Envio a Domicilio </label><br>
+        <br>
+
+        <hr>
+
+        <a href="./Pastelería_inicio.html">
+            <Input type="button" value="Terminar Pedido" >
+        </a><br>
+
+    </form>
+
+    <hr>
+    <h4> Ubicación del local </h4>
+    <ul>
+        <li>
+            Dirección: Canal de Tezontle #1512, Dr. Alfonso Ortiz Tirado, Iztapalapa, CDMX
+        </li>
+        <li>
+            Teléfono: 
+            <a href="tel:+526142796316">+52 614 279 63 16 </a>
+        </li>
+        <li>
+            E-mail: 
+            <a href="mailto:chavador99@hotmail.com">chavador99@hotmail.com </a>
+        </li>
+      </ul>
+
+    <h5> Horarios </h5>
+
+    <ul>
+        <li>
+            Lunes a Viernes: De 8:00 AM a 4:00 PM
+        </li>
+        <li>
+            Sabado: De 10:00 AM a 6:00 PM
+        </li>
+        <li>
+            Domingo: De 10:00 AM a 8:00 PM
+        </li>
+    </ul>
+ 
+</body>
+</html>
